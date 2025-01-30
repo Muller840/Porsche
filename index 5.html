@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ta Te Ti</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="contenedor-juego">
+  <h1>Ta Te Ti</h1>
+
+  <div id="tablero">
+    <div class="casilla" data-pos="0"></div>
+    <div class="casilla" data-pos="1"></div>
+    <div class="casilla" data-pos="2"></div>
+    <div class="casilla" data-pos="3"></div>
+    <div class="casilla" data-pos="4"></div>
+    <div class="casilla" data-pos="5"></div>
+    <div class="casilla" data-pos="6"></div>
+    <div class="casilla" data-pos="7"></div>
+    <div class="casilla" data-pos="8"></div>
+  </div>
+
+  <div id="mensaje"></div>
+</div>
+
+<div id="formulario-inicio">
+  <label for="nombre1">Nombre Jugador 1:</label>
+  <input type="text" id="nombre1" name="nombre1"><br><br>
+  <label for="nombre2">Nombre Jugador 2:</label>
+  <input type="text" id="nombre2" name="nombre2"><br><br>
+
+  <button onclick="iniciarJuego()">Iniciar Juego</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

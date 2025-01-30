@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Imagen de fondo */
+  background-image: url("https://ca-times.brightspotcdn.com/dims4/default/d5c7185/2147483647/strip/true/crop/5906x3937+0+0/resize/2400x1600!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F58%2F4e%2Fa59edfeb4c00b85217973e5560f6%2Fsquidgame-unit-104-442.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contenedor-juego {
+  text-align: center;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 5px;
+  margin: 20px auto;
+}
+
+.casilla {
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para las imágenes */
+.casilla img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+/* Estilos para el formulario de inicio */
+#formulario-inicio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#formulario-inicio label,
+#formulario-inicio p {
+  color: white;
+}
